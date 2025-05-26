@@ -14,28 +14,24 @@ This is an assignment for Andaz Kumar's Android Development Internship. It featu
 ## Screenshots
 **1. Profile Activity Layout**
 
-![image](https://github.com/user-attachments/assets/a3650243-a648-4155-9a9d-c4ece3a7f9ec)
+<img src="https://github.com/user-attachments/assets/a3650243-a648-4155-9a9d-c4ece3a7f9ec" alt="screenshot_layout1" width="300"><br>
 
 **2. item_financial_metric.xml Layout**
 
-![image](https://github.com/user-attachments/assets/1c22d31c-544c-4208-ae09-a430bf2e5460)
+<img src="https://github.com/user-attachments/assets/1c22d31c-544c-4208-ae09-a430bf2e5460" alt="screenshot1" width="310"><br>
 
 **3. item_reward.xml Layout**
 
-![image](https://github.com/user-attachments/assets/552acb1b-b012-4d1f-a16d-0a3735ad60d3)
+<img src="https://github.com/user-attachments/assets/552acb1b-b012-4d1f-a16d-0a3735ad60d3" alt="screenshot1" width="310"><br>
 
 **4. App in Execution**
 
-![screenshot1](https://github.com/user-attachments/assets/b5946eae-0a51-45a3-b56d-6f3af5f47d76)
-
-
-![screenshot2](https://github.com/user-attachments/assets/f01539cd-caf1-4a0a-8c38-6498183d0e5e)
-
+<img src="https://github.com/user-attachments/assets/b5946eae-0a51-45a3-b56d-6f3af5f47d76" alt="screenshot1" width="300">
+<img src="https://github.com/user-attachments/assets/f01539cd-caf1-4a0a-8c38-6498183d0e5e" alt="screenshot2" width="300"><br>
 
 - On clicking the edit profile button
 
-![screenshot3](https://github.com/user-attachments/assets/436b7eca-2222-4e01-8d53-407180ec851b)
-
+<img src="https://github.com/user-attachments/assets/436b7eca-2222-4e01-8d53-407180ec851b" alt="screenshot3" width="300"><br>
 
 
 ## Instructions
