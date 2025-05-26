@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AssignmentApp</string>
+    <string name="profile_activity_title">Profile</string>
+    <string name="support_btn_label">support</string>
+    <string name="profile_username_label">username</string>
+    <string name="profile_memberSince_label">member since</string>
+    <string name="cred_garage_card_title">get to know your vehicles, inside out</string>
+    <string name="cred_garage_explore_btn_label">CRED garage</string>
+    <string name="rewards_and_benefits_section_title"><![CDATA[YOUR REWARDS & BENEFITS]]></string>
+    <string name="transactions_and_support_section_title"><![CDATA[TRANSACTIONS & SUPPORT]]></string>
+    <string name="title_label_for_component">title</string>
+    <string name="value_label_for_component">value</string>
+</resources>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AssignmentApp"
+    tools:context=".MainActivity">
+
+    <!-- top app bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurfaceContainerLow"
+            android:paddingHorizontal="16dp">
+
+            <ImageButton
+                android:id="@+id/appBar_backBtn"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_btn"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/appBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:text="@string/profile_activity_title"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?attr/colorPrimary"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/appBar_supportBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/support_btn_label"
+                android:textColor="?attr/colorSecondary"
+                android:fontFamily="@font/poppins_regular"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeWidth="0.5dp"
+                app:icon="@drawable/ic_chat_box"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- main screen content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainScreenSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <!-- main screen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- first half of screen -->
+            <LinearLayout
+                android:id="@+id/mainScreenUpperSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="?attr/colorSurfaceContainerLow">
+
+                <!-- 1. profile -->
+                <RelativeLayout
+                    android:id="@+id/profileSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorSurfaceContainerLow">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/profilePic"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_profile_pic"
+                        app:shapeAppearanceOverlay="@style/Widget.AssignmentApp.ImageView.CircularImage" />
+
+                    <LinearLayout
+                        android:id="@+id/profileInfoSection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/profilePic">
+
+                        <TextView
+                            android:id="@+id/profileName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profile_username_label"
+                            android:textSize="16sp"
+                            android:textColor="?attr/colorSecondary"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <TextView
+                            android:id="@+id/profileCreationDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profile_memberSince_label"
+                            android:textColor="?attr/colorSecondary"
+                            android:fontFamily="@font/poppins_regular"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/profileEditBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        app:icon="@drawable/ic_edit_pencil"
+                        app:iconSize="28dp"
+                        style="@style/Widget.Material3.Button.IconButton.Outlined"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <!-- 2. cred garage -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/credGarageSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:cardBackgroundColor="?attr/colorSurfaceContainerLowest"
+                    app:cardCornerRadius="0dp"
+                    app:strokeColor="?attr/colorOutline"
+                    app:strokeWidth="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="20dp"
+                        android:paddingHorizontal="26dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/credGarageIcon"
+                            android:layout_width="44dp"
+                            android:layout_height="34dp"
+                            android:layout_centerVertical="true"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            android:src="@drawable/ic_car"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            app:strokeColor="?attr/colorPrimary"/>
+
+                        <LinearLayout
+                            android:id="@+id/credGarageInfoSection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="18dp"
+                            android:orientation="vertical"
+                            android:layout_toEndOf="@id/credGarageIcon">
+
+                            <TextView
+                                android:id="@+id/credGarageTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/cred_garage_card_title"
+                                android:textSize="12sp"
+                                android:textColor="?attr/colorSecondary"
+                                android:fontFamily="@font/poppins_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/credGarageBtnText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="@string/cred_garage_explore_btn_label"
+                                    android:textSize="14sp"
+                                    android:textColor="?attr/colorPrimary"
+                                    android:fontFamily="@font/poppins_regular"/>
+
+                                <ImageButton
+                                    android:id="@+id/credGarageBtn"
+                                    android:layout_width="40dp"
+                                    android:layout_height="18dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_arrow_btn"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 3. financial metrics -->
+                <LinearLayout
+                    android:id="@+id/financialMetricSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_financial_metric"
+                        android:id="@+id/creditScoreMetric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutline"
+                        android:layout_marginVertical="14dp"/>
+
+                    <include layout="@layout/item_financial_metric"
+                        android:id="@+id/lifetimeCBMetric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutline"
+                        android:layout_marginVertical="14dp"/>
+
+                    <include layout="@layout/item_financial_metric"
+                        android:id="@+id/bankBalanceMetric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- second half of screen -->
+            <LinearLayout
+                android:id="@+id/mainScreenLowerSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="?attr/colorSurfaceContainerLowest">
+
+                <!-- 1. rewards and benefits -->
+                <LinearLayout
+                    android:id="@+id/rewardSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rewardSectionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="22dp"
+                        android:text="@string/rewards_and_benefits_section_title"
+                        android:textSize="14sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:letterSpacing="0.2"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <include layout="@layout/item_reward"
+                        android:id="@+id/cashbackBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="14dp"
+                        android:background="?attr/colorOutline" />
+
+                    <include layout="@layout/item_reward"
+                        android:id="@+id/coinsInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutline"
+                        android:layout_marginVertical="14dp"/>
+
+                    <include layout="@layout/item_reward"
+                        android:id="@+id/referAndEarn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- 2. transactions and support -->
+                <LinearLayout
+                    android:id="@+id/transactionSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/transactionSectionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="22dp"
+                        android:text="@string/transactions_and_support_section_title"
+                        android:textSize="14sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:letterSpacing="0.2"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/transactionItemTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="all transactions"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_medium"/>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/transactionShowBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_right_btn"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

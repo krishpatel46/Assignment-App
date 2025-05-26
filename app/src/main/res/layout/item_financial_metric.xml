@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/metricImg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="6dp"
+        android:background="@drawable/border_circular"/>
+
+    <TextView
+        android:id="@+id/metricTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/title_label_for_component"
+        android:textSize="12sp"
+        android:textColor="?attr/colorSecondary"
+        android:fontFamily="@font/poppins_medium" />
+
+    <TextView
+        android:id="@+id/creditRefreshMsgChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:letterSpacing="0.1"
+        android:textSize="12sp"
+        android:textColor="?attr/colorTertiary"
+        android:fontFamily="@font/poppins_bold"
+        android:visibility="gone"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/metricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/value_label_for_component"
+        android:textSize="12sp"
+        android:textColor="?attr/colorPrimary"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <ImageButton
+        android:id="@+id/metricShowBtn"
+        android:layout_width="36dp"
+        android:layout_height="22dp"
+        android:rotation="180"
+        android:background="@drawable/ic_arrow_btn"/>
+</LinearLayout>
