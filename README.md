@@ -12,27 +12,30 @@ This is an assignment for Andaz Kumar's Android Development Internship. It featu
 
 
 ## Screenshots
-**Profile Activity Layout**
+**1. Profile Activity Layout**
 
 ![image](https://github.com/user-attachments/assets/a3650243-a648-4155-9a9d-c4ece3a7f9ec)
 
-**item_financial_metric.xml Layout**
+**2. item_financial_metric.xml Layout**
 
 ![image](https://github.com/user-attachments/assets/1c22d31c-544c-4208-ae09-a430bf2e5460)
 
-**item_reward.xml Layout**
+**3. item_reward.xml Layout**
 
 ![image](https://github.com/user-attachments/assets/552acb1b-b012-4d1f-a16d-0a3735ad60d3)
 
-**App in Execution**
+**4. App in Execution**
 
-![image](https://github.com/user-attachments/assets/f8d6f609-0810-4995-a610-64f13461804a)
+![screenshot1](https://github.com/user-attachments/assets/b5946eae-0a51-45a3-b56d-6f3af5f47d76)
 
-![image](https://github.com/user-attachments/assets/d4577d0b-e022-4cb0-abf5-109caed5bf35)
+
+![screenshot2](https://github.com/user-attachments/assets/f01539cd-caf1-4a0a-8c38-6498183d0e5e)
+
 
 - On clicking the edit profile button
 
-![image](https://github.com/user-attachments/assets/227ca190-a476-4144-b16c-83fb181b730b)
+![screenshot3](https://github.com/user-attachments/assets/436b7eca-2222-4e01-8d53-407180ec851b)
+
 
 
 ## Instructions
